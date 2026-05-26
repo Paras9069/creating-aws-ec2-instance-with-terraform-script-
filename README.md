@@ -1,6 +1,5 @@
 # creating-aws-ec2-instance-with-terraform-script-
 maine isme hashicorp configuration language ka use krke terraform ka use aws ec2 ko connect kiya everything i do is done by using terrraform dicumentation and perfectly explained the each step with comments in my style 
-
 # 🚀 AWS EC2 Instance Creation using Terraform
 
 Ye project Terraform ka use karke AWS par EC2 Instance automate tareeke se create karne ke liye banaya gaya hai.  
@@ -17,8 +16,9 @@ Is project me humne:
 - AWS credentials setup kiye
 - SSH Key Pair generate ki
 - Terraform script likhkar EC2 instance create kiya
-- GitHub par project upload kiya
+- Security Groups configure kiye
 - Terraform destroy command se resources remove kiye
+- GitHub par project upload kiya
 
 ---
 
@@ -26,6 +26,8 @@ Is project me humne:
 
 - Terraform
 - AWS EC2
+- AWS VPC
+- AWS Security Groups
 - PowerShell
 - Git & GitHub
 - VS Code
@@ -36,14 +38,22 @@ Is project me humne:
 
 ```bash
 .
-├── terraform.tf
-├── provider.tf
 ├── ec2.tf
+├── provider.tf
+├── terraform.tf
 ├── .gitignore
 ├── my_key
 ├── my_key.pub
 ├── terraform.tfstate
 ├── terraform.tfstate.backup
+├── images
+│   ├── terraform_init.png
+│   ├── terraform_apply.png
+│   ├── terraform_plan.png
+│   ├── terraform_destroy.png
+│   ├── security groups.png
+│   ├── ec2 created successfully.png
+│   └── instance destroyed.png
 └── README.md
 ```
 
@@ -124,12 +134,18 @@ provider "aws" {
 }
 ```
 
+---
+
 ## EC2 Instance Resource
 
 ```hcl
 resource "aws_instance" "mera_ec2_instance" {
   ami           = "ami-05f0fd22e"
   instance_type = "t3.micro"
+
+  tags = {
+    Name = "mera_ec2_instance"
+  }
 }
 ```
 
@@ -151,8 +167,7 @@ Ye command:
 
 ## 📸 Terraform Init Output
 
-![Terraform Init](./terraforminit.png)
-```
+![Terraform Init](./images/terraform_init.png)
 
 ---
 
@@ -165,14 +180,6 @@ terraform validate
 ```
 
 Ye check karta hai ki Terraform configuration sahi hai ya nahi.
-
----
-
-## 📸 Terraform Validate Output
-
-
-![Terraform Validate](./Screenshot%202026-05-26%20131624(1).png)
-
 
 ---
 
@@ -190,9 +197,7 @@ Ye dikhata hai ki kaun-kaun se resources create hone wale hain.
 
 ## 📸 Terraform Plan Output
 
-
-![Terraform Plan](./Screenshot%202026-05-26%20132509(1).png)
-
+![Terraform Plan](./images/terraform_plan.png)
 
 ---
 
@@ -214,27 +219,21 @@ Ye command:
 
 ## 📸 Terraform Apply Output
 
-
-![Terraform Apply](./Screenshot%202026-05-26%20131751(1).png)
-
+![Terraform Apply](./images/terraform_apply.png)
 
 ---
 
 # 🌐 AWS Console Outputs
 
-## 📸 Security Group Created
+## 📸 Security Groups Created
 
-
-![Security Group](./Screenshot%202026-05-26%20132043(1).png)
-
+![Security Groups](./images/security%20groups.png)
 
 ---
 
-## 📸 EC2 Instance Running
+## 📸 EC2 Instance Created Successfully
 
-
-![EC2 Running](./Screenshot%202026-05-26%20131959(2).png)
-
+![EC2 Instance](./images/ec2%20created%20successfully.png)
 
 ---
 
@@ -254,27 +253,15 @@ Ye command:
 
 ---
 
-## 📸 Resources Before Destroy
+## 📸 Terraform Destroy Output
 
-
-![Resources Before Destroy](./Screenshot%202026-05-26%20133611(1).png)
-
+![Terraform Destroy](./images/terraform%20destroy.png)
 
 ---
 
-## 📸 Terraform Destroy Running
+## 📸 Instance Destroyed Successfully
 
-
-![Terraform Destroy](./Screenshot%202026-05-26%20132158.png)
-
-
----
-
-## 📸 Terraform Destroy Complete
-
-```
-![Terraform Destroy Complete](./Screenshot%202026-05-26%20132058(1).png)
-```
+![Instance Destroyed](./images/instance%20destroyed.png)
 
 ---
 
