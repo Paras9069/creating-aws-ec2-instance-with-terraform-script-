@@ -151,7 +151,6 @@ Ye command:
 
 ## 📸 Terraform Init Output
 
-```md
 ![Terraform Init](./terraforminit.png)
 ```
 
