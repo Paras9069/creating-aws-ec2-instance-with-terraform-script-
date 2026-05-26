@@ -197,7 +197,7 @@ Ye dikhata hai ki kaun-kaun se resources create hone wale hain.
 
 ## 📸 Terraform Plan Output
 
-![Terraform Plan](./images/terraform_plan.png)
+![Terraform Plan](./images/terraform%20plan.png)
 
 ---
 
@@ -219,7 +219,7 @@ Ye command:
 
 ## 📸 Terraform Apply Output
 
-![Terraform Apply](./images/terraform_apply.png)
+![Terraform Apply](./images/terraform%20apply.png)
 
 ---
 
