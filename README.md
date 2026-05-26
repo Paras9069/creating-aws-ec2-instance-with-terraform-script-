@@ -319,7 +319,7 @@ Is project se aapne seekha:
 
 # 👨‍💻 Author
 
-Paras
+Paras Sharma
 
 ---
 
@@ -328,4 +328,4 @@ Paras
 Terraform cloud infrastructure automation ko easy banata hai.  
 Is project ki help se AWS resources ko manually create karne ki jagah automated tareeke se manage kiya ja sakta hai.
 
-Ye project beginners ke liye Terraform aur AWS automation seekhne ka ek practical example hai.
+
