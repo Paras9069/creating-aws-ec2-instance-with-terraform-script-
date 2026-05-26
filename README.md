@@ -152,7 +152,7 @@ Ye command:
 ## 📸 Terraform Init Output
 
 ```md
-![Terraform Init](./Screenshot202026-05-26%20131609(1).png)
+![Terraform Init](./Screenshot 2026-05-26 131609.png)
 ```
 
 ---
