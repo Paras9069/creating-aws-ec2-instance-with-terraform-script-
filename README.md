@@ -172,7 +172,7 @@ Ye check karta hai ki Terraform configuration sahi hai ya nahi.
 
 
 ![Terraform Validate](./Screenshot%202026-05-26%20131624(1).png)
-```
+
 
 ---
 
@@ -192,7 +192,7 @@ Ye dikhata hai ki kaun-kaun se resources create hone wale hain.
 
 
 ![Terraform Plan](./Screenshot%202026-05-26%20132509(1).png)
-```
+
 
 ---
 
@@ -216,7 +216,7 @@ Ye command:
 
 
 ![Terraform Apply](./Screenshot%202026-05-26%20131751(1).png)
-```
+
 
 ---
 
@@ -224,17 +224,17 @@ Ye command:
 
 ## 📸 Security Group Created
 
-```
+
 ![Security Group](./Screenshot%202026-05-26%20132043(1).png)
-```
+
 
 ---
 
 ## 📸 EC2 Instance Running
 
-```
+
 ![EC2 Running](./Screenshot%202026-05-26%20131959(2).png)
-```
+
 
 ---
 
@@ -256,17 +256,17 @@ Ye command:
 
 ## 📸 Resources Before Destroy
 
-``
+
 ![Resources Before Destroy](./Screenshot%202026-05-26%20133611(1).png)
-```
+
 
 ---
 
 ## 📸 Terraform Destroy Running
 
-```
+
 ![Terraform Destroy](./Screenshot%202026-05-26%20132158.png)
-```
+
 
 ---
 
